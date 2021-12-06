@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.9 on darwin)" generated="20211207 01:32:57.625" rpa="false" schemaversion="2">
+<suite id="s1" name="Taxi Calculate" source="/Users/rennycat/Documents/workspace/learn-robot/taxi_calculate.robot">
+<test id="s1-t1" name="Taxi1">
+<kw name="TAXI Cal">
+<arg>1</arg>
+<arg>0</arg>
+<arg>35.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:32:57.774" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:32:57.773" endtime="20211207 01:33:02.005"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:02.006" level="INFO">Typing text '1' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:02.005" endtime="20211207 01:33:02.261"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:02.262" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:02.261" endtime="20211207 01:33:02.638"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:02.638" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:02.638" endtime="20211207 01:33:03.258"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:03.275" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '35.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:03.258" endtime="20211207 01:33:03.276"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:03.276" endtime="20211207 01:33:03.378"/>
+</kw>
+<status status="PASS" starttime="20211207 01:32:57.773" endtime="20211207 01:33:03.378"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:03.379" endtime="20211207 01:33:03.380"/>
+</kw>
+<status status="PASS" starttime="20211207 01:32:57.772" endtime="20211207 01:33:03.380"/>
+</test>
+<test id="s1-t2" name="Taxi2">
+<kw name="TAXI Cal">
+<arg>5</arg>
+<arg>0</arg>
+<arg>57.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:03.382" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:03.382" endtime="20211207 01:33:10.193"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:10.194" level="INFO">Typing text '5' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:10.193" endtime="20211207 01:33:10.360"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:10.361" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:10.360" endtime="20211207 01:33:10.515"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:10.515" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:10.515" endtime="20211207 01:33:10.549"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:10.576" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '57.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:10.549" endtime="20211207 01:33:10.577"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:10.577" endtime="20211207 01:33:10.726"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:03.381" endtime="20211207 01:33:10.726"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:10.727" endtime="20211207 01:33:10.728"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:03.381" endtime="20211207 01:33:10.728"/>
+</test>
+<test id="s1-t3" name="Taxi3">
+<kw name="TAXI Cal">
+<arg>15</arg>
+<arg>0</arg>
+<arg>117.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:10.730" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:10.730" endtime="20211207 01:33:17.723"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:17.725" level="INFO">Typing text '15' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:17.724" endtime="20211207 01:33:17.968"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:17.969" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:17.968" endtime="20211207 01:33:18.048"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:18.049" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:18.048" endtime="20211207 01:33:18.079"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:18.100" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '117.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:18.079" endtime="20211207 01:33:18.100"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:18.100" endtime="20211207 01:33:18.248"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:10.729" endtime="20211207 01:33:18.248"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:18.249" endtime="20211207 01:33:18.250"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:10.728" endtime="20211207 01:33:18.250"/>
+</test>
+<test id="s1-t4" name="Taxi4">
+<kw name="TAXI Cal">
+<arg>25</arg>
+<arg>0</arg>
+<arg>187.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:18.252" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:18.251" endtime="20211207 01:33:26.252"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:26.253" level="INFO">Typing text '25' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:26.252" endtime="20211207 01:33:26.561"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:26.562" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:26.561" endtime="20211207 01:33:26.640"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:26.640" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:26.640" endtime="20211207 01:33:26.672"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:26.704" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '187.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:26.673" endtime="20211207 01:33:26.704"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:26.704" endtime="20211207 01:33:26.857"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:18.251" endtime="20211207 01:33:26.857"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:26.859" endtime="20211207 01:33:26.860"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:18.251" endtime="20211207 01:33:26.860"/>
+</test>
+<test id="s1-t5" name="Taxi5">
+<kw name="TAXI Cal">
+<arg>45</arg>
+<arg>0</arg>
+<arg>341.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:26.864" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:26.864" endtime="20211207 01:33:33.410"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:33.412" level="INFO">Typing text '45' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:33.411" endtime="20211207 01:33:33.671"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:33.672" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:33.671" endtime="20211207 01:33:33.778"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:33.779" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:33.778" endtime="20211207 01:33:33.823"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:33.845" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '341.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:33.824" endtime="20211207 01:33:33.845"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:33.845" endtime="20211207 01:33:33.955"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:26.863" endtime="20211207 01:33:33.955"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:33.956" endtime="20211207 01:33:33.957"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:26.861" endtime="20211207 01:33:33.957"/>
+</test>
+<test id="s1-t6" name="Taxi6">
+<kw name="TAXI Cal">
+<arg>70</arg>
+<arg>0</arg>
+<arg>551.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:33.959" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:33.959" endtime="20211207 01:33:40.728"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:40.729" level="INFO">Typing text '70' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:40.728" endtime="20211207 01:33:40.985"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:40.986" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:40.985" endtime="20211207 01:33:41.070"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:41.070" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:41.070" endtime="20211207 01:33:41.106"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:41.122" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '551.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:41.106" endtime="20211207 01:33:41.122"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:41.123" endtime="20211207 01:33:41.229"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:33.958" endtime="20211207 01:33:41.232"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:41.232" endtime="20211207 01:33:41.233"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:33.957" endtime="20211207 01:33:41.233"/>
+</test>
+<test id="s1-t7" name="Taxi7">
+<kw name="TAXI Cal">
+<arg>100</arg>
+<arg>0</arg>
+<arg>851.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:41.237" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:41.236" endtime="20211207 01:33:49.935"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:49.936" level="INFO">Typing text '100' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:49.935" endtime="20211207 01:33:50.204"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:50.205" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:50.204" endtime="20211207 01:33:50.306"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:50.307" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:50.307" endtime="20211207 01:33:50.342"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:50.360" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '851.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:50.343" endtime="20211207 01:33:50.360"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:50.360" endtime="20211207 01:33:50.507"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:41.236" endtime="20211207 01:33:50.508"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:50.508" endtime="20211207 01:33:50.509"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:41.234" endtime="20211207 01:33:50.510"/>
+</test>
+<test id="s1-t8" name="Taxi8">
+<kw name="TAXI Cal">
+<arg>10</arg>
+<arg>10</arg>
+<arg>105.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:50.512" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:50.512" endtime="20211207 01:33:57.311"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:57.313" level="INFO">Typing text '10' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:33:57.312" endtime="20211207 01:33:57.607"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:57.608" level="INFO">Typing text '10' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:33:57.607" endtime="20211207 01:33:57.689"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:33:57.689" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:33:57.689" endtime="20211207 01:33:57.720"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20211207 01:33:57.736" level="INFO">Element 'id=calculated_Price' attribute 'value' contains value '105.00'.</msg>
+<status status="PASS" starttime="20211207 01:33:57.720" endtime="20211207 01:33:57.736"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211207 01:33:57.737" endtime="20211207 01:33:57.883"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:50.511" endtime="20211207 01:33:57.884"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:33:57.886" endtime="20211207 01:33:57.886"/>
+</kw>
+<status status="PASS" starttime="20211207 01:33:50.510" endtime="20211207 01:33:57.887"/>
+</test>
+<test id="s1-t9" name="Taxi9">
+<kw name="TAXI Cal">
+<arg>0</arg>
+<arg>0</arg>
+<arg>0.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:33:57.891" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:33:57.891" endtime="20211207 01:34:04.892"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:34:04.893" level="INFO">Typing text '0' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:34:04.892" endtime="20211207 01:34:05.146"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:34:05.147" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:34:05.146" endtime="20211207 01:34:05.246"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:34:05.246" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:34:05.246" endtime="20211207 01:34:05.281"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211207 01:34:05.934" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211207 01:34:05.296" endtime="20211207 01:34:05.934"/>
+</kw>
+<msg timestamp="20211207 01:34:05.936" level="FAIL">Element 'id=calculated_Price' attribute should have value '0.00' (str) but its value was '35.00' (str).</msg>
+<status status="FAIL" starttime="20211207 01:34:05.281" endtime="20211207 01:34:05.936"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20211207 01:34:05.936" endtime="20211207 01:34:05.936"/>
+</kw>
+<status status="FAIL" starttime="20211207 01:33:57.890" endtime="20211207 01:34:05.937"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:34:05.937" endtime="20211207 01:34:06.105"/>
+</kw>
+<status status="FAIL" starttime="20211207 01:33:57.889" endtime="20211207 01:34:06.105">Element 'id=calculated_Price' attribute should have value '0.00' (str) but its value was '35.00' (str).</status>
+</test>
+<test id="s1-t10" name="Taxi10">
+<kw name="TAXI Cal">
+<arg>-10</arg>
+<arg>0</arg>
+<arg>0.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 01:34:06.109" level="INFO">Opening browser 'Chrome' to base url 'https://nhaidee.com/travel/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%81%E0%B8%8B%E0%B8%B5%E0%B9%88/'.</msg>
+<status status="PASS" starttime="20211207 01:34:06.108" endtime="20211207 01:34:13.246"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=distance</arg>
+<arg>${distance}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:34:13.247" level="INFO">Typing text '-10' into text field 'name=distance'.</msg>
+<status status="PASS" starttime="20211207 01:34:13.247" endtime="20211207 01:34:13.444"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=traffic</arg>
+<arg>${traffic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 01:34:13.445" level="INFO">Typing text '0' into text field 'name=traffic'.</msg>
+<status status="PASS" starttime="20211207 01:34:13.444" endtime="20211207 01:34:13.607"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<arg>id=c1</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20211207 01:34:13.608" level="INFO">Submitting form 'id=c1'.</msg>
+<status status="PASS" starttime="20211207 01:34:13.607" endtime="20211207 01:34:13.635"/>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>id=calculated_Price</arg>
+<arg>value</arg>
+<arg>${price}</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211207 01:34:14.203" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211207 01:34:13.656" endtime="20211207 01:34:14.203"/>
+</kw>
+<msg timestamp="20211207 01:34:14.203" level="FAIL">Element 'id=calculated_Price' attribute should have value '0.00' (str) but its value was '35.00' (str).</msg>
+<status status="FAIL" starttime="20211207 01:34:13.635" endtime="20211207 01:34:14.203"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20211207 01:34:14.204" endtime="20211207 01:34:14.204"/>
+</kw>
+<status status="FAIL" starttime="20211207 01:34:06.107" endtime="20211207 01:34:14.204"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211207 01:34:14.205" endtime="20211207 01:34:14.321"/>
+</kw>
+<status status="FAIL" starttime="20211207 01:34:06.107" endtime="20211207 01:34:14.321">Element 'id=calculated_Price' attribute should have value '0.00' (str) but its value was '35.00' (str).</status>
+</test>
+<status status="FAIL" starttime="20211207 01:32:57.627" endtime="20211207 01:34:14.323"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="2" skip="0" id="s1" name="Taxi Calculate">Taxi Calculate</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211207 01:32:57.771" level="ERROR">Error in file '/Users/rennycat/Documents/workspace/learn-robot/taxi_calculate.robot' on line 3: Importing library 'Builtin' failed: ModuleNotFoundError: No module named 'Builtin'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python39.zip
+  /usr/local/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9
+  /usr/local/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload
+  /usr/local/lib/python3.9/site-packages</msg>
+</errors>
+</robot>
